@@ -1,0 +1,95 @@
+:root {
+    --pink: #FFC0CB;
+    --lightpink: #FFB6C1;
+    --hotpink: #ff69b4;
+    --darkviolet: #9400D3;
+    --magenta: #ff9dff;
+}
+.darkviolet{
+    color: var(--darkviolet);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #000000!important;
+    background-color: var(--hotpink);
+    font-weight: 600;
+}
+#contact{
+    height: 300px;
+    width: 100%;
+    background-color: #111827;
+    background-color: #031846;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#callBtns{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.stdColor{
+    color: var(--lightpink);
+}
+.lightColor{
+    color: orangered;
+    border-color: orangered;
+}
+.sideButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%; right: 0;
+    height: 60px;
+    width: 60px;
+    background-color: #25D366;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    z-index: 10;
+    text-decoration: none;
+}
+.sideButton > img{
+    height: 50px;
+    z-index: 12;
+}
+@media screen and (max-width: 1300px) {
+    #callBtns{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #callBtns{
+        align-items: center;
+        justify-content: space-evenly;
+        height: 60%;
+    }
+}
+@media screen and (max-width: 700px) {
+    #callTxts{
+        margin-top: 35px;
+        font-size: 3.8rem;
+    }
+    #callBtns{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 40%;
+        margin-bottom: 35px;
+    }
+    #contact{
+        height: 400px;
+        flex-direction: column;
+    }
+    #contact > span{
+        font-size: 20rem!important;
+    }
+}
+@media screen and (max-width: 350px) {
+    #callTxts{
+        font-size: 2.8rem;
+    }
+    #contact{
+        height: 350px;
+    }
+}
